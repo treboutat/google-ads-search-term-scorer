@@ -1,20 +1,24 @@
 # Sources & basis
 
-This skill is the self-contained, public version of TNT Growth's negative-keyword relevance-scoring methodology. Notes on the claims it makes, so they're defensible if a user asks.
+This skill is the public version of TNT Growth's approved search-term review method (Search Term Review book, with matching and scope rules from the Starter Negatives book; release `tnt-google-ads-2026-09-07.1`). Notes on its claims so they're defensible.
 
-## The 1-10 relevance rubric
-The scoring bands, objective-anchoring, "when in doubt score lower," and the ≤3-burn / ≥8-protect framing mirror the relevance-scoring methodology TNT validated in live account work. The internal version runs against TNT's account-objective records and search-term pipeline; this public version takes the objective and the search-term report directly from the user, so it works for anyone without TNT's tooling.
+## Relevance, economics and confidence
+Three separate assessments per query. The 1-10 relevance score is an editorial sort aid. It isn't Google's Quality Score or a probability of conversion, and it never decides an exclusion or keyword addition by itself. Missing information lowers confidence, not relevance.
 
-## The ~20% CPA benchmark
-The skill projects CPA reduction "around 20%" when search-term scoring is run consistently in higher-spend accounts. This is a **benchmark observed across multiple TNT-managed accounts at high spend, not a guarantee.** The projection is scaled down by the share of wasted spend actually being removed, and 20% is framed as a ceiling. Account-specific outcomes vary with how much waste exists and how disciplined the cadence is.
+## Actions
+Clear offer mismatches can be excluded immediately, even with zero clicks. Plausible demand with thin or immature evidence stays eligible on a watch list with a review condition and an exposure limit the business sets. Economic exclusions are narrow, labeled economic, and reassessed in about a month. No click count, conversion count or waiting period decides an action on its own.
 
-## Throughput claim (hundreds vs ~20)
-Comparing AI scoring of an entire search terms report against a manual human pass. "Hundreds per run" is typical on a first sweep of a high-spend account with accumulated waste; steady-state is lower (~100/run). Operational observations, not lab figures.
+## Spend reporting
+Spend on proposed exclusions is historical spend in the stated window. The skill doesn't call it savings and doesn't project a CPA reduction, because removed spend can shift to other queries and total spend and volume change too. Earlier versions projected a CPA drop against a ~20% benchmark; that projection is removed.
 
-## Cadence guidance
-The weekly / 2x-week / 3x-week cadence by spend band reflects TNT's standard operating practice: broad-match and lookalike-training pollution accumulates faster at higher spend, so review frequency scales with spend.
+## Cadence
+Weekly is a practical starting point for an active account, adjusted for spend pace, launches and volatility. It's an operating choice, not a Google requirement or a negatives quota.
+
+## Platform facts
+Matching, scope, PMax, AI Max and Demand Gen statements link to Google's documentation and were checked in September 2026. Re-verify before relying on one.
 
 ## What this skill deliberately does not claim
-- No specific client names or client results.
-- No guaranteed outcome — every projection is conditional on the data provided.
-- No keyword-pausing recommendations (it flags search *terms* to negate, not keywords to pause).
+- No client names or client results. Examples are hypothetical.
+- No guaranteed outcome, savings figure or CPA projection.
+- No keyword-pausing recommendations (it flags search *terms*, not keywords).
+- Nothing is applied automatically. A human approves each exclusion.
